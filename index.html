@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizzli | Commercial Engine & Digital Accelerator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .ticker-wrap {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            padding: 1.5rem 0;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            white-space: nowrap;
+        }
+        .ticker {
+            display: inline-block;
+            white-space: nowrap;
+            animation: ticker 25s linear infinite;
+        }
+        .ticker-item {
+            display: inline-block;
+            padding: 0 4rem;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+
+        input[type="number"] {
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid #000;
+            color: #000;
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding: 0.5rem 0;
+            width: 100%;
+            outline: none;
+        }
+        
+        .section-padding {
+            padding: 6rem 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 10rem 4rem;
+            }
+        }
+
+        .bento-card {
+            border: 2px solid #000;
+            padding: 2.5rem;
+            border-radius: 2rem; /* Rounded Edges */
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-black selection:text-white">
+
+    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-black tracking-tighter uppercase">Bizzli</a>
+                </div>
+                <div class="hidden md:flex space-x-8 text-xs font-black tracking-widest uppercase">
+                    <a href="#commercial-operator" class="hover:underline decoration-2 underline-offset-4">Commercial Operator</a>
+                    <a href="#asset-owners" class="hover:underline decoration-2 underline-offset-4">Asset Owners</a>
+                    <a href="#calculator" class="hover:underline decoration-2 underline-offset-4">ROI Planner</a>
+                    <a href="mailto:mirakhmad.aliakbarov@icloud.com" class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-20">
+        <span class="text-sm font-black uppercase tracking-[0.4em] mb-4 block text-gray-400">Geneva // Zurich</span>
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.9] mb-8 uppercase">
+            BRIDGING<br>
+            <span class="text-gray-300">COMPLEX TECH</span><br>
+            & COMMERCIAL<br>
+            SCALE
+        </h1>
+        <p class="text-xl md:text-2xl text-black max-w-2xl font-medium leading-tight">
+            We build the sales engine for deep-tech/saas startups and simplify digital transformation for global asset owners.
+        </p>
+    </section>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-item">Wingtra</div>
+            <div class="ticker-item">senseFly</div>
+            <div class="ticker-item">Hilti</div>
+            <div class="ticker-item">Neom</div>
+            <div class="ticker-item">Dubai Municipality</div>
+            <div class="ticker-item">Yanbu Municipality</div>
+            <div class="ticker-item">Wingtra</div>
+            <div class="ticker-item">senseFly</div>
+            <div class="ticker-item">Hilti</div>
+            <div class="ticker-item">Neom</div>
+            <div class="ticker-item">Dubai Municipality</div>
+            <div class="ticker-item">Yanbu Municipality</div>
+        </div>
+    </div>
+
+    <section id="commercial-operator" class="section-padding max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <span class="text-sm font-black uppercase tracking-[0.3em] mb-4 block">01 / Services</span>
+                <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-8">Commercial<br>Operator</h2>
+            </div>
+            <div class="grid gap-6">
+                <div class="bento-card">
+                    <h3 class="text-xl font-black uppercase mb-2">Commercial Infrastructure</h3>
+                    <p class="font-medium opacity-80">High-performance Sales Ops, CRM ecosystems, and MEDDIC frameworks.</p>
+                </div>
+                <div class="bento-card">
+                    <h3 class="text-xl font-black uppercase mb-2">GTM Execution</h3>
+                    <p class="font-medium opacity-80">Pulling technology through the "Valley of Death" to first 5-10 critical enterprise customers using BANT, Sandler, and Challenger sales frameworks.</p>
+                </div>
+                <div class="bento-card">
+                    <h3 class="text-xl font-black uppercase mb-2">Market Scale</h3>
+                    <p class="font-medium opacity-80">Scaling deep-tech into EMEA/APAC via established C-level networks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="asset-owners" class="section-padding max-w-7xl mx-auto bg-gray-50 border-y-2 border-black">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="order-2 md:order-1 grid gap-6">
+                <div class="bento-card bg-white">
+                    <h3 class="text-xl font-black uppercase mb-2">Tech Integration</h3>
+                    <p class="font-medium opacity-80">Agnostic selection and deployment of Mobile Mapping, Drones, Robotics, SaaS, and IoT.</p>
+                </div>
+                <div class="bento-card bg-white">
+                    <h3 class="text-xl font-black uppercase mb-2">Digital Twins</h3>
+                    <p class="font-medium opacity-80">Converting raw sensor data into high-value 3D living infrastructure models.</p>
+                </div>
+                <div class="bento-card bg-white">
+                    <h3 class="text-xl font-black uppercase mb-2">Operational Readiness</h3>
+                    <p class="font-medium opacity-80">Handling regulations, training, and knowledge transfer to local teams.</p>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 md:text-right">
+                <span class="text-sm font-black uppercase tracking-[0.3em] mb-4 block">02 / Services</span>
+                <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-8">Asset<br>Owners</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="section-padding max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-4">Lead ROI Planner</h2>
+            <p class="font-bold uppercase tracking-widest text-sm text-gray-400">Calculate Velocity & Opportunity Cost</p>
+            <div class="h-2 w-24 bg-black mx-auto mt-4"></div>
+        </div>
+
+        <div class="border-4 border-black p-8 md:p-12 rounded-[3rem]">
+            <div class="flex flex-col md:flex-row gap-4 mb-12">
+                <button id="btnStartup" class="flex-1 py-4 bg-black text-white font-black uppercase tracking-widest rounded-full transition-all" onclick="switchMode('startup')">Startup (CHF)</button>
+                <button id="btnAsset" class="flex-1 py-4 border-2 border-black font-black uppercase tracking-widest rounded-full hover:bg-black hover:text-white transition-all" onclick="switchMode('asset')">Asset Owner (USD)</button>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="space-y-10">
+                    <div>
+                        <label id="label1" class="text-xs font-black uppercase tracking-widest mb-2 block text-gray-400">Unit Sale Price (CHF)</label>
+                        <input type="number" id="val1" value="45000" oninput="update()">
+                    </div>
+                    <div>
+                        <label id="label2" class="text-xs font-black uppercase tracking-widest mb-2 block text-gray-400">Projected Units</label>
+                        <input type="number" id="val2" value="10" oninput="update()">
+                    </div>
+                    <div>
+                        <label id="label3" class="text-xs font-black uppercase tracking-widest mb-2 block text-gray-400">Success Fee (%)</label>
+                        <input type="number" id="val3" value="15" oninput="update()">
+                    </div>
+                    <div id="timelineContainer" class="hidden">
+                        <label class="text-xs font-black uppercase tracking-widest mb-2 block text-gray-400">Project Timeline (Months)</label>
+                        <input type="number" id="val4" value="12" oninput="update()">
+                    </div>
+                </div>
+
+                <div class="bg-black text-white p-10 flex flex-col justify-center rounded-[2rem]">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] mb-4 opacity-60">Projected Impact</span>
+                    <div id="totalDisplay" class="text-4xl md:text-6xl font-black tracking-tighter mb-4">0</div>
+                    <div id="subDisplay" class="text-lg font-bold uppercase mb-6 border-b border-white/20 pb-4 text-gray-400">Fee: 0</div>
+                    <p id="contextBox" class="text-sm italic opacity-80 leading-relaxed font-medium"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding max-w-7xl mx-auto border-t-2 border-black">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-3xl font-black uppercase mb-4">Global Reach.<br>Linguistic Precision.</h3>
+                <p class="font-medium text-lg">Native and professional fluency including German, French, Spanish, Arabic, Serbian, and Bulgarian.</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <span class="border-2 border-black px-5 py-2 rounded-full font-black uppercase text-xs">German</span>
+                <span class="border-2 border-black px-5 py-2 rounded-full font-black uppercase text-xs">French</span>
+                <span class="border-2 border-black px-5 py-2 rounded-full font-black uppercase text-xs">Spanish</span>
+                <span class="border-2 border-black px-5 py-2 rounded-full font-black uppercase text-xs">Arabic</span>
+                <span class="border-2 border-black px-5 py-2 rounded-full font-black uppercase text-xs">Serbian</span>
+                <span class="border-2 border-black px-5 py-2 rounded-full font-black uppercase text-xs">English</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-24 px-4 text-center">
+        <h2 class="text-5xl md:text-8xl font-black tracking-tighter uppercase mb-12 leading-none">Ready to accelerate?</h2>
+        <a href="mailto:mirakhmad.aliakbarov@icloud.com" class="inline-block bg-white text-black text-xl font-black uppercase px-12 py-5 rounded-full hover:invert transition-all mb-16">
+            Get In Touch
+        </a>
+        <div class="max-w-7xl mx-auto pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="font-black uppercase tracking-widest text-xs">Bizzli &copy; 2026</p>
+            <div class="flex gap-8 font-bold text-xs uppercase opacity-40">
+                <span>Geneva Office</span>
+                <span>Zurich Hub</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let mode = 'startup';
+        
+        function switchMode(m) {
+            mode = m;
+            const btnStartup = document.getElementById('btnStartup');
+            const btnAsset = document.getElementById('btnAsset');
+            const timeline = document.getElementById('timelineContainer');
+            
+            if(m === 'startup') {
+                btnStartup.className = "flex-1 py-4 bg-black text-white font-black uppercase tracking-widest rounded-full transition-all";
+                btnAsset.className = "flex-1 py-4 border-2 border-black font-black uppercase tracking-widest rounded-full hover:bg-black hover:text-white transition-all";
+                document.getElementById('label1').innerText = "Unit Sale Price (CHF)";
+                document.getElementById('label2').innerText = "Projected Units";
+                document.getElementById('val1').value = 45000;
+                document.getElementById('val2').value = 10;
+                timeline.classList.add('hidden');
+            } else {
+                btnAsset.className = "flex-1 py-4 bg-black text-white font-black uppercase tracking-widest rounded-full transition-all";
+                btnStartup.className = "flex-1 py-4 border-2 border-black font-black uppercase tracking-widest rounded-full hover:bg-black hover:text-white transition-all";
+                document.getElementById('label1').innerText = "Total Asset Value (USD)";
+                document.getElementById('label2').innerText = "Efficiency Gain (%)";
+                document.getElementById('val1').value = 1000000;
+                document.getElementById('val2').value = 5;
+                timeline.classList.remove('hidden');
+            }
+            update();
+        }
+
+        function update() {
+            const v1 = parseFloat(document.getElementById('val1').value) || 0;
+            const v2 = parseFloat(document.getElementById('val2').value) || 0;
+            const v3 = parseFloat(document.getElementById('val3').value) || 0;
+            const v4 = parseFloat(document.getElementById('val4').value) || 12; // Months
+            
+            const totalDisplay = document.getElementById('totalDisplay');
+            const subDisplay = document.getElementById('subDisplay');
+            const contextBox = document.getElementById('contextBox');
+
+            if(mode === 'startup') {
+                const revenue = v1 * v2;
+                const fee = revenue * (v3 / 100);
+                totalDisplay.innerText = "CHF " + revenue.toLocaleString();
+                subDisplay.innerText = "Fee: CHF " + fee.toLocaleString() + " + 1.5% Equity Stake";
+                contextBox.innerText = "We build your commercial infrastructure and secure high-value enterprise contracts.";
+            } else {
+                const annualGain = v1 * (v2 / 100);
+                const totalValueCreated = annualGain * (v4 / 12);
+                const fee = totalValueCreated * (v3 / 100);
+                const monthlyLoss = (annualGain / 12);
+                
+                totalDisplay.innerText = "USD " + totalValueCreated.toLocaleString();
+                subDisplay.innerText = "Fee: USD " + fee.toLocaleString();
+                contextBox.innerText = "Opportunity Cost: USD " + Math.round(monthlyLoss).toLocaleString() + " lost for every month of delay. We accelerate project velocity.";
+            }
+        }
+        update();
+    </script>
+</body>
+</html>
